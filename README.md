@@ -1,7 +1,5 @@
 # Moja Strona WWW
 
-[![Strona CI](https://github.com/onufry7/Strona/actions/workflows/test.yml/badge.svg)](https://github.com/onufry7/Strona/actions/workflows/test.yml)
-
 Moja prywatna strona na której znajdują się:
 
 - Kolekcja gier planszowych.
