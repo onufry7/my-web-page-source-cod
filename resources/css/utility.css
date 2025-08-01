@@ -1,0 +1,165 @@
+@utility container {
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+/* Background images */
+@utility christmas {
+    background-image: url("../images/bg/christmas.webp");
+    background-repeat: repeat-x;
+    background-position: top;
+}
+
+@utility halloween {
+    background-image: url("../images/bg/halloween.webp");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+@utility new-year {
+    background-image: url("../images/bg/new-year.webp");
+    background-repeat: repeat-x;
+    background-position: top;
+}
+
+@utility easter {
+    background-image: url("../images/bg/easter.webp");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+@utility spring {
+    background-image: url("../images/bg/spring.webp");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+@utility summer {
+    background-image: url("../images/bg/summer.webp");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+@utility autumn {
+    background-image: url("../images/bg/autumn.webp");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+@utility winter {
+    background-image: url("../images/bg/winter.webp");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.text-muted {
+    @apply text-gray-600 dark:text-gray-400;
+}
+
+/* Accent bg */
+.bg-accent {
+    @apply bg-accent;
+}
+
+.bg-accent-content {
+    @apply bg-accent-content;
+}
+
+.bg-accent-foreground {
+    @apply bg-accent-foreground;
+}
+
+.bg-accent-project {
+    @apply bg-accent-project;
+}
+
+.bg-accent-cipher {
+    @apply bg-accent-cipher;
+}
+
+.bg-accent-board-game {
+    @apply bg-accent-board-game;
+}
+
+.bg-accent-sleeve {
+    @apply bg-accent-sleeve;
+}
+
+.bg-accent-technology {
+    @apply bg-accent-technology;
+}
+
+.bg-accent-publisher {
+    @apply bg-accent-publisher;
+}
+
+.bg-accent-access-token {
+    @apply bg-accent-access-token;
+}
+
+.bg-accent-user {
+    @apply bg-accent-user;
+}
+
+/* Accent border */
+.border-accent {
+    @apply border-accent;
+}
+
+.border-accent-content {
+    @apply border-accent-content;
+}
+
+.border-accent-foreground {
+    @apply border-accent-foreground;
+}
+
+.border-accent-project {
+    @apply border-accent-project;
+}
+
+.border-accent-cipher {
+    @apply border-accent-cipher;
+}
+
+.border-accent-board-game {
+    @apply border-accent-board-game;
+}
+
+.border-accent-sleeve {
+    @apply border-accent-sleeve;
+}
+
+.border-accent-technology {
+    @apply border-accent-technology;
+}
+
+.border-accent-publisher {
+    @apply border-accent-publisher;
+}
+
+.border-accent-access-token {
+    @apply border-accent-access-token;
+}
+
+.border-accent-user {
+    @apply border-accent-user;
+}
+
+/* Custom colors  */
+.bg-danger {
+    @apply bg-red-700 dark:bg-red-900;
+}
+
+.bg-success {
+    @apply bg-green-600 dark:bg-green-700;
+}
+
+.requiredStar {
+    @apply text-red-600 dark:text-red-400 mx-1;
+}
+
+.input-no-cancel::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    display: none;
+}

@@ -1,0 +1,400 @@
+/* Pge Header */
+.page-header {
+    @apply flex flex-wrap justify-between items-center gap-4 px-2 py-4 mt-2 border-y;
+}
+
+.page-header > h2 {
+    @apply flex flex-row flex-wrap items-center gap-2;
+}
+
+.page-header > h2 svg {
+    @apply h-8 w-auto;
+}
+
+.page-header > h2 span {
+    @apply text-sm;
+}
+
+/* Page elements */
+.actions-footer {
+    @apply flex flex-col-reverse flex-wrap justify-center gap-8 border-t-1 p-2 my-6 md:flex-row md:justify-between;
+}
+
+.pagination-links {
+    @apply flex flex-row flex-wrap justify-center items-center gap-2 p-2 my-8;
+}
+
+.box-container {
+    @apply flex flex-row flex-wrap justify-center gap-8 lg:gap-16 my-8;
+}
+
+/* Box tile */
+.box-tile {
+    @apply flex w-96 flex-col justify-between gap-4 rounded-lg border shadow-sm overflow-hidden;
+    @apply bg-white/40 dark:bg-black/40 text-black dark:text-white;
+    @apply transition-all duration-200;
+}
+
+.box-tile-img {
+    @apply relative overflow-hidden border-b;
+}
+
+.box-tile h3 {
+    @apply mx-4 py-4 px-2 border-b;
+}
+
+.box-tile p {
+    @apply line-clamp-3 px-8 py-2;
+}
+
+.box-tile footer {
+    @apply flex flex-row justify-end px-2 pb-2;
+}
+
+.box-tile footer > a {
+    @apply p-2 motion-safe:animate-pulse;
+}
+
+.box-tile:has(a:hover) {
+    @apply shadow-lg;
+}
+
+/* Sleeve card */
+.sleeve-card-mini {
+    @apply overflow-hidden rounded-lg border shadow-sm;
+    @apply border-gray-500 bg-white/40 dark:bg-black/40 text-black dark:text-white;
+}
+
+.sleeve-card {
+    @apply flex flex-col justify-between m-4 w-56 overflow-hidden rounded-lg border transition-all duration-200;
+    @apply border-sky-600 dark:border-sky-400 shadow-lg bg-white/40 dark:bg-black/40 text-black dark:text-white;
+}
+
+.sleeve-card .separator {
+    @apply bg-sky-600 dark:bg-sky-400 group-hover:bg-indigo-500;
+}
+
+div.sleeve-card:has(> a:hover) {
+    @apply border-indigo-500 shadow-indigo-400/50;
+}
+
+/* Switch theme mode */
+.active-switch-theme-mode {
+    @apply text-blue-500 cursor-default hover:bg-transparent;
+}
+
+.inactive-switch-theme-mode {
+    @apply cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800;
+}
+
+/* Games file btn */
+
+.btn-game {
+    @apply flex flex-col justify-center items-center gap-2 p-1 size-32 cursor-pointer rounded-lg;
+    @apply opacity-95 ring-3 backdrop-blur-md backdrop-filter transition-all duration-300 shadow-md relative overflow-hidden;
+    @apply ring-sky-600 dark:ring-sky-400 text-sky-600 dark:text-sky-400 bg-gray-600/20 shadow-neutral-500/25;
+}
+
+.label-name,
+.label-download {
+    @apply inline-block text-center transform transition-all duration-300 ease-in-out pointer-events-none;
+}
+
+.btn-game .label-name {
+    @apply opacity-100 translate-x-0 group-hover:opacity-0 group-hover:translate-x-4;
+}
+
+.btn-game .label-download {
+    @apply absolute left-0 right-0 text-center opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0;
+}
+
+.btn-game .icon-hover,
+.btn-game .icon-default {
+    @apply h-12 w-auto transition-all duration-300 ease-in-out pointer-events-none;
+}
+
+.btn-game .icon-default {
+    @apply group-hover:translate-y-full group-hover:opacity-0 group-hover:scale-0;
+}
+
+.btn-game .icon-hover {
+    @apply absolute transform -translate-y-full opacity-0 transition-all duration-300 ease-in-out group-hover:translate-y-3/5 group-hover:opacity-100;
+}
+
+.btn-game .label-size {
+    @apply relative text-center text-sm transition-all duration-300 ease-in-out group-hover:-translate-y-15;
+}
+
+.instruction-game:hover {
+    @apply ring-emerald-600 dark:ring-emerald-400 text-emerald-600 dark:text-emerald-400 from-emerald-400/20 via-emerald-900/20 shadow-emerald-500/25 shadow-lg;
+}
+
+.file-game:hover {
+    @apply ring-teal-600 dark:ring-teal-400 text-teal-600 dark:text-teal-400 from-teal-400/20 via-teal-900/20 shadow-teal-500/25 shadow-lg;
+}
+
+/* Tiles */
+.statistics-tile {
+    @apply h-26 flex w-36 flex-col justify-center gap-4 rounded-lg p-2 text-center shadow-xl cursor-pointer opacity-95 ring backdrop-blur-md backdrop-filter transition-all duration-200;
+    @apply text-sky-600 dark:text-sky-400 ring-sky-600 dark:ring-sky-400 bg-gray-600/20;
+}
+
+.statistics-tile:hover {
+    @apply opacity-90 bg-gradient-to-t from-indigo-400/20 via-indigo-900/20 to-transparent dark:text-indigo-400 text-indigo-600 ring-indigo-500 shadow-sm shadow-indigo-500/60;
+}
+
+.tile-btn {
+    @apply flex flex-col flex-wrap items-center justify-center gap-4 h-36 w-36 rounded-lg p-1 opacity-95 ring-3 shadow-xl backdrop-blur-md backdrop-filter transition-all duration-200;
+    @apply ring-sky-600 dark:ring-sky-400 text-sky-600 dark:text-sky-400 bg-gray-600/20 shadow-neutral-500/25;
+}
+
+.tile-btn:hover {
+    @apply opacity-90 bg-gradient-to-t from-indigo-400/20 via-indigo-900/20 to-transparent dark:text-indigo-400 text-indigo-600 ring-indigo-500 shadow-xl shadow-indigo-500/60;
+}
+
+.tile-btn svg {
+    @apply w-12 h-12;
+}
+
+.tile-btn:hover svg {
+    @apply scale-130;
+}
+
+.tile-btn:hover span {
+    @apply scale-110;
+}
+
+.tile-btn svg,
+.tile-btn span {
+    @apply transition-all duration-300 ease-in-out;
+}
+
+.home-btn {
+    @apply flex flex-row flex-wrap items-center justify-center rounded-full ring-3 p-4 shadow-xl backdrop-blur-md backdrop-filter;
+    @apply ring-indigo-400 shadow-indigo-700/60  text-indigo-400 bg-indigo-800;
+}
+
+/* Buttons */
+.pin-btn {
+    @apply flex items-center justify-center cursor-pointer rounded-full absolute m-1 shadow-sm hover:shadow-md dark:shadow-white/10 transition-all duration-200 opacity-75 hover:opacity-100;
+}
+
+.btn {
+    @apply inline-flex items-center justify-center gap-2 p-2 m-1 text-sm font-medium uppercase tracking-widest rounded-full shadow-sm hover:shadow-md dark:shadow-white/10 transition-all duration-200;
+}
+
+.btn > svg {
+    @apply inline-block size-5;
+}
+
+.btn.primary,
+.pin-btn.primary {
+    @apply bg-indigo-600 text-white hover:bg-indigo-500;
+}
+
+.btn.secondary,
+.pin-btn.secondary {
+    @apply bg-gray-600 text-white hover:bg-gray-500;
+}
+
+.btn.success,
+.pin-btn.success {
+    @apply bg-green-700 text-white hover:bg-green-600;
+}
+
+.btn.danger,
+.pin-btn.danger {
+    @apply bg-red-700 text-white hover:bg-red-500;
+}
+
+.btn.warning,
+.pin-btn.warning {
+    @apply bg-yellow-500 text-black hover:bg-yellow-300;
+}
+
+.btn.info,
+.pin-btn.info {
+    @apply bg-sky-600 text-white hover:bg-sky-500;
+}
+
+.btn.accent,
+.pin-btn.accent {
+    @apply bg-violet-700 text-white hover:bg-violet-600;
+}
+
+.btn.light,
+.pin-btn.light {
+    @apply text-gray-800 bg-gray-200 hover:bg-white dark:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600;
+}
+
+.buttons-panel {
+    @apply flex mb-4 gap-4 py-6 px-2;
+}
+
+/* Main Menu */
+.navs {
+    @apply inline-flex items-center justify-between transition-all duration-150 ease-in-out px-4 py-2 leading-5 focus:outline-none;
+}
+
+.navs-dropdown {
+    @apply w-full text-sm;
+}
+
+.navs-responsive {
+    @apply w-full border-transparent border-l-4;
+}
+
+.navs-main {
+    @apply gap-2 rounded-lg bg-gray-100 dark:bg-gray-800;
+}
+
+.navs-main > svg {
+    @apply hidden md:inline h-8 w-auto;
+}
+
+.navs.active {
+    @apply text-indigo-700 bg-indigo-500/20 dark:text-indigo-300 dark:bg-indigo-500/30;
+}
+
+.navs:is(:hover, :focus):not(.active) {
+    @apply text-indigo-700 bg-indigo-500/40 dark:text-indigo-300 dark:bg-indigo-500/50;
+}
+
+.navs.project:is(:hover, :focus, .active) {
+    @apply text-cyan-700 bg-accent-project/20 dark:text-cyan-300 dark:bg-accent-project/30;
+}
+
+.navs.cipher:is(:hover, :focus, .active) {
+    @apply text-violet-700 bg-accent-cipher/20 dark:text-violet-300 dark:bg-accent-cipher/30;
+}
+
+.navs.board-game:is(:hover, :focus, .active) {
+    @apply text-green-700 bg-accent-board-game/20 dark:text-green-300 dark:bg-accent-board-game/30;
+}
+
+.navs.main-menu-logout:is(:hover, :focus) {
+    @apply text-red-700 bg-red-500/20 dark:text-red-300 dark:bg-red-500/30;
+}
+
+.navs.main-menu-login:is(:hover, :focus) {
+    @apply text-emerald-700 bg-emerald-500/20 dark:text-emerald-300 dark:bg-emerald-500/30;
+}
+
+/* Tables */
+.default-table {
+    @apply w-full text-left rtl:text-right;
+}
+.default-table thead {
+    @apply uppercase bg-gray-300 text-gray-700 dark:bg-gray-700 dark:text-gray-400;
+}
+
+.default-table thead th {
+    @apply px-4 py-3;
+}
+
+.default-table th.actions {
+    @apply text-center;
+}
+
+.default-table tbody th {
+    @apply px-4 py-2 font-bold text-gray-900 dark:text-gray-100;
+}
+
+.default-table tbody tr {
+    @apply border-b bg-gray-100 hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600;
+}
+
+.default-table td:not(.actions) {
+    @apply px-4 py-2;
+}
+
+.default-table td.actions > span {
+    @apply flex flex-row flex-wrap justify-end items-center gap-2 pr-2;
+}
+
+.default-table .show-icon {
+    @apply flex flex-row items-center gap-2;
+}
+
+.default-table .show-icon > svg {
+    @apply h-6 w-auto;
+}
+
+.default-table a:hover {
+    @apply underline;
+}
+
+/* Data row */
+.dataRow {
+    @apply flex flex-col flex-wrap gap-y-2 p-4 sm:justify-between w-full;
+}
+
+.dataRow p {
+    @apply flex flex-row flex-wrap items-center gap-2;
+}
+
+.dataRow p span {
+    @apply font-bold;
+}
+
+.timestamps {
+    @apply mt-8 py-2 flex flex-wrap justify-center gap-x-8 gap-y-2 text-xs sm:justify-end border-t-1 border-gray-500/50 text-gray-400 dark:text-gray-500;
+}
+
+/* Image upload component */
+label.img-upload-label {
+    @apply select-none m-0 p-2 flex flex-col items-center justify-center h-60 cursor-pointer rounded-md border border-dashed border-gray-500 bg-white/75 dark:bg-black/75;
+}
+
+.imageToDelete {
+    @apply relative after:text-red-500 after:content-['\2298'] after:text-9xl after:absolute after:right-1/2 after:transform after:translate-x-1/2 after:bottom-0 after:-translate-y-1/2 after:opacity-60;
+}
+
+/* Image bare */
+.image-bar {
+    @apply h-24 sm:h-48 w-full object-cover;
+}
+
+.image-bar-responsive {
+    @apply h-32 w-full object-cover transition duration-700 ease-in-out hover:scale-125;
+}
+
+/* Simple menu */
+.simple-menu {
+    @apply mt-0 mb-8;
+}
+
+.simple-menu ul {
+    @apply flex flex-col w-full list-outside list-none;
+    @apply sm:inline-flex sm:flex-row sm:border-b sm:py-4;
+}
+
+.simple-menu ul li {
+    @apply flex my-auto border-b;
+    @apply sm:w-auto sm:pl-8 sm:border-b-0;
+}
+
+.simple-menu ul a {
+    @apply inline-flex justify-center items-center text-center capitalize gap-x-2 p-4 transition duration-150 w-full;
+    @apply text-sky-600 dark:text-sky-200 bg-sky-100 dark:bg-slate-700;
+    @apply sm:flex-col sm:my-0 sm:rounded-lg sm:size-24 sm:p-0;
+}
+
+.simple-menu ul a:hover {
+    @apply focus:outline-none focus:text-indigo-500 text-indigo-600 dark:text-indigo-200 bg-sky-200 dark:bg-blue-950;
+}
+
+.simple-menu ul a.active {
+    @apply cursor-default text-indigo-600 dark:text-indigo-200 bg-indigo-200 dark:bg-indigo-950;
+}
+
+/* Responsive table for cipher */
+.responsive-table {
+    @apply flex flex-wrap gap-y-4;
+}
+.responsive-table-col {
+    @apply flex-1 max-w-fit;
+}
+.responsive-table-col > div {
+    @apply text-center border border-gray-500 p-1;
+}

@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /rejestracja/
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
+Disallow: /*.png$
+Disallow: /*.gif$
+Disallow: /*.svg$
+Disallow: /*.web$
+
+User-agent: Googlebot
+Allow: /projekty$
+Allow: /projekty/*
+Allow: /szyfry$
+Allow: /szyfry/*
+Allow: /planszowki$
+Allow: /planszowki/*
+Allow: /o-mnie#about$
+Allow: /o-mnie#contact$
+Allow: /o-mnie#brand$
+Allow: /o-mnie#hobby$
+Allow: /$

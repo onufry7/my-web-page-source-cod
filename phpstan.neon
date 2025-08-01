@@ -1,0 +1,21 @@
+includes:
+	- vendor/larastan/larastan/extension.neon
+	- vendor/nesbot/carbon/extension.neon
+	# - phpstan-baseline.php
+parameters:
+	level: 9
+	checkUnusedViews: false
+	noEnvCallsOutsideOfConfig: true
+	paths:
+		- app
+		- bootstrap/app.php
+		- database
+		- lang
+		- resources
+		- routes
+		# - tests
+	scanDirectories:
+		- vendor
+	ignoreErrors:
+		- identifier: missingType.generics
+		- '#no value type specified in iterable type array#'

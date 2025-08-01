@@ -1,0 +1,83 @@
+@import "tailwindcss";
+@import "../css/input-reset";
+@import "../css/base";
+@import "../css/utility";
+@import "../css/components";
+
+@plugin "@tailwindcss/typography";
+
+@source "../views";
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../vendor/livewire/flux-pro/stubs/**/*.blade.php';
+@source '../../vendor/livewire/flux/stubs/**/*.blade.php';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+[x-cloak] {
+    display: none;
+}
+
+@theme {
+    --font-sans: "Lato", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+
+    --color-accent: var(--color-indigo-500);
+    --color-accent-content: var(--color-white);
+    --color-accent-foreground: var(--color-neutral-800);
+
+    /* Accents for sections */
+    --color-accent-project: var(--color-cyan-500);
+    --color-accent-cipher: var(--color-violet-500);
+    --color-accent-board-game: var(--color-green-500);
+    --color-accent-sleeve: var(--color-lime-500);
+    --color-accent-technology: var(--color-blue-500);
+    --color-accent-publisher: var(--color-emerald-500);
+    --color-accent-access-token: var(--color-rose-500);
+    --color-accent-user: var(--color-red-500);
+
+    /* Animations */
+    --animate-dring: dring 2s ease 0.5s infinite normal forwards;
+
+    @keyframes dring {
+        0% {
+            transform: rotate(0deg);
+        }
+        2% {
+            transform: rotate(7deg);
+        }
+        4% {
+            transform: rotate(0deg);
+        }
+        6% {
+            transform: rotate(-7deg);
+        }
+        8% {
+            transform: rotate(0deg);
+        }
+        10% {
+            transform: rotate(7deg);
+        }
+        12% {
+            transform: rotate(0deg);
+        }
+        14% {
+            transform: rotate(-7deg);
+        }
+        16% {
+            transform: rotate(0deg);
+        }
+        18% {
+            transform: rotate(7deg);
+        }
+        20% {
+            transform: rotate(0deg);
+        }
+        22% {
+            transform: rotate(-7deg);
+        }
+        24% {
+            transform: rotate(0deg);
+        }
+    }
+}
